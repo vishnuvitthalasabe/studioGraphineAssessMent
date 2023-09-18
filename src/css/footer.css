@@ -1,0 +1,13 @@
+.footer {
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #footerText {
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+  }

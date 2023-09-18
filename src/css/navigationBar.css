@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    background:#1a1a1a;
+}
+
+#title {
+    display: flex;
+    font-size: 18px;
+    font-family: "Work Sans";
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+#title1 {
+    display: flex;
+    background: transparent;
+    font-size: 18px;
+    font-family: "Work Sans";
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
+    appearance: none;
+    border: 0px;
+  }
+  #options{
+    display: flex;
+    background: #1a1a1a;
+    font-size: 18px;
+    font-family: "Work Sans";
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+  @media (max-width: 600px) {
+    .navbar {
+      display: none; /* Hide the component on small screens */
+    }
+  }

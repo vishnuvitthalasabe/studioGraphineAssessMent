@@ -1,0 +1,17 @@
+.NavabarMenuDiv{   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background:#1a1a1a;
+    flex-direction:row;
+}
+#NavBarMenuOptions{
+    display: flex;
+    font-size: 18px;
+    font-family: "Work Sans";
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
+}

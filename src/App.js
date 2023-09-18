@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ContactUs from './components/ContactUs';
+import Home from './components/Home';
+import NewProducts from './components/NewProducts';
+import TopBar from './components/TopBar';
+import FooterComponent from './components/FooterComponent';
+import NavbarMenu from './components/NavbarMenu';
+import { useState } from 'react';
 function App() {
+  const[isMenu,setMenu]=useState(true);
+  const handleClick=()=>{
+    setMenu(!isMenu);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+        {isMenu?<TopBar/>:<div></div>}
+        {isMenu?<Home flag={isMenu} handleMenu={handleClick} />:<div></div>}
+        {isMenu?<NewProducts/>:<div></div>}
+        {isMenu?<ContactUs/>:<div></div>}
+        {isMenu?<FooterComponent/>:<div></div>}
+        {isMenu?<div></div>:<NavbarMenu flag={isMenu} handleMenu={handleClick}/>}
     </div>
   );
 }

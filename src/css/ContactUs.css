@@ -1,0 +1,116 @@
+.subMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/18591063.png");
+  width: 100%;
+  position: relative;
+}
+.subContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+#nletterHeader {
+  font-family: "Syne", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 0px;
+}
+#nletterParagraph {
+  font-family: Work Sans;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 22.5%;
+  margin-top: 30px;
+}
+.form-control {
+  color: white;
+  width: 40vw;
+  background: transparent;
+  font-family: Work Sans;
+  font-size: 18px;
+  border: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ffffff;
+  padding: 10px;
+}
+.getintouchDiv {
+  display: flex;
+  flex-direction: row;
+}
+#getintouchLogo {
+  display: flex;
+  color: #ffffff;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 10vw;
+  margin: 0px;
+}
+#sendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: work Sans;
+  font-size: 26px;
+  color: #f07e15;
+  height: 181px;
+  width: 181px;
+  background: transparent;
+  border-radius: 90.5px;
+  border: 2px solid #f07e15;
+  margin-top: 65px;
+  margin-left: -43px;
+}
+
+#warning {
+  color: orangered;
+  font-size: 14px;
+  font-family: Work Sans;
+  margin-left: 12px;
+  margin-top: 5px;
+}
+@media(max-width:600px){
+    .subContainer{
+        flex-direction: column;
+    }
+    .contactForm{
+        margin-right: 0%;
+    }
+    #sendButton{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top:60%;
+        right: 7%;
+    }
+    .form-control{
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    .newsletter{
+        width:90%
+    }
+}

@@ -1,0 +1,43 @@
+.shopkart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+  }
+  .wishlistBag{
+    display: flex;
+    flex-direction: row;
+  }
+  #shopKartTitle {
+    /* font-size: 40px; */
+    font-family: 'Poppins',sans-serif;
+    color: #FFFFFF;
+    font-weight: 275;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+#wbtext{
+    font-size: 14px;
+    font-family: Work Sans;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .navMenu{
+    display: none;
+  }
+  @media (max-width:600px){
+    .wishlistBag{
+      display: none;
+    }
+    .navMenu{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
